@@ -1,0 +1,7 @@
+- 👋 Hi, I’m @micaelalzg
+- 👀 I’m interested in astronomy
+- 🌱 I’m currently learning about the world of data processing 
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me 
+- 😄 Pronouns: Mica
+- ⚡ Fun fact: 
