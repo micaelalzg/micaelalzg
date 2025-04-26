@@ -1,0 +1,37 @@
+        program ej2tp6
+!      vamos a realizar una transf(x,y) a nuevas coord. (x´,y´)
+
+        implicit none
+        real x,y,x´,y´, t
+        parameter "pi= 3.1415"
+
+!     ingreso coord. (x,y) y t
+
+      write(*,*) "ingrese la coord. x"
+      read(*,*) x
+      write(*,*) "ingrese la coord. y"
+      read(*,*) y
+      write(*,*) "ingrese el angulo tita(grados)"
+      read(*,*) t
+
+!    convierto grados a rad
+
+     t=t*pi/180.
+
+!    ahora convierto la coord (x,y) a (x´,y´)
+
+     call rot(x,y,t,x_n,y_n)
+     write(*,*)"las nuevas coord son:"
+     write(*,*)"x´=", x_n
+     write(*,*)"y´=", y_n
+   
+     subroutine rot(x,y,t,x´,y´)
+     implicit none
+     real, intent(in) x,y,t
+     real, intent(out) x´,y´
+  
+     x´= x*cos(t) + y*sen(t)
+     y´= -x*sen(t) + y*cos(t)
+
+end subroutine rot
+end
